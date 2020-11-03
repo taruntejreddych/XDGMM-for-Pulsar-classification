@@ -2,9 +2,8 @@ from matplotlib.patches import Ellipse
 import matplotlib.transforms as transforms
 import numpy as np
 import matplotlib.pyplot as plt
-from xdgmm import XDGMM
+from astroML.density_estimation import XDGMM
 from astroML.plotting.tools import draw_ellipse
-import time
 
 # Data taken from https://www.atnf.csiro.au/research/pulsar/psrcat/
 data = np.loadtxt("pulsar_data.txt",dtype = np.float64)
