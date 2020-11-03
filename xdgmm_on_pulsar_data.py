@@ -41,10 +41,6 @@ def confidence_ellipse(mean_x, mean_y, cov, ax, n_std=2.0, facecolor='none', **k
     ell_radius_y = np.sqrt(1 - pearson)
     ellipse = Ellipse((0, 0), width=ell_radius_x * 2, height=ell_radius_y * 2,
                       facecolor=facecolor, **kwargs)
-
-    # Calculating the stdandard deviation of x from
-    # the squareroot of the variance and multiplying
-    # with the given number of standard deviations.
     scale_x = np.sqrt(cov[0, 0]) * n_std
     scale_y = np.sqrt(cov[1, 1]) * n_std
    
