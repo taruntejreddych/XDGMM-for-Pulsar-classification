@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 from astroML.density_estimation import XDGMM
-from xdgmm import XDGMM
+from astroML.density_estimation import XDGMM
 data = np.loadtxt("pulsar_data.txt",dtype = np.float64)
 p_in = data[:,1]
 p_err_in = data[:,2]
