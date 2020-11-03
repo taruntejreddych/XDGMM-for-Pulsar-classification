@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from xdgmm import XDGMM
+from astroML.density_estimation import XDGMM
 from astroML.plotting.tools import draw_ellipse
 
 # Data taken from https://www.atnf.csiro.au/research/pulsar/psrcat/
